@@ -13,10 +13,20 @@ exports.getUser = (req, res, next) => {
 
 exports.newUser = (req, res, next) => {
 
+    const username = req.body.name.trim();
+    const email = req.body.email.trim();
+    const regex = /^(?=.*\d).{4,8}$/gm;
+    const password = req.body.password;
+    const found = password.match(regex);
+    if(!found || username.length < 4 ){
+        console.log('senha invalida');
+        res.render('signup',{msg:'Erro!'});
+        return;
+    }
     bcrypt.hash(req.body.password, saltRounds, function (err, hash) {
 
         if (hash) {
-            const user = new User(req.body.name, req.body.email, hash);
+            const user = new User(username, req.body.email, hash);
             user.save((err, saved) => {
 
                 if (saved) {

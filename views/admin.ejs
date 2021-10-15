@@ -11,5 +11,27 @@
     <% if (typeof msg != 'undefined') { %>
      <h3>MSG: <%= msg %> </h3>
     <% } %>
+
+    <h3>Nova Categoria</h3>
+    <form>
+        <label>Título</label>
+        <input type="text" name="category"/>
+        <input type="submit"/>
+    </form>
+    <h3>Novo Forum</h3>
+    <form>
+        <label>Título</label>
+        <input type="text" name="forum"/>
+        <label>Descrição</label>
+        <input type="text" name="description"/>
+        <label>Categoria</label>
+        <select name="select">
+            <option value="valor1" selected>Valor 1</option>
+            <option value="valor2">Valor 2</option>
+            <option value="valor3">Valor 3</option>
+        </select>
+        <input type="submit"/>
+    </form>
+
 </body>
 </html>

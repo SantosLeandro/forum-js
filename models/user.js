@@ -8,19 +8,19 @@ class User{
     } 
 
     save(callback){
-        db.query('INSERT INTO users (name, email, password, createdAt, modifiedAt) values ($1, $2, $3, now(), now())',
+        db.query('INSERT INTO users (name, email, password, created_at, modified_at) values ($1, $2, $3, now(), now())',
         [this.name, this.email, this.password],callback);
     }
 
     static update(id, name, email){
-        db.query('UPDATE users SET name = $1, email = $2, modifiedAt = NOW() WHERE id = $3', 
+        db.query('UPDATE users SET name = $1, email = $2, modified_at = NOW() WHERE id = $3', 
         [name, email, id], (err, res) =>{
             console.log(err,res);
         });
     }
 
     static updatePassword(id, password){
-        db.query('UPDATE users SET password = $1, modifiedAt = NOW() WHERE id = $2', 
+        db.query('UPDATE users SET password = $1, modified_at = NOW() WHERE id = $2', 
         [password, id], (err, res) =>{
             console.log(err,res);
         }); 

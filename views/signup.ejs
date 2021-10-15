@@ -8,16 +8,16 @@
 </head>
 <body>
     <h3>USUARIO</h3>
-    <% if (typeof user != 'undefined') { %>
-        <h3>MSG: <%= user.name %> </h3>
+    <% if (typeof msg != 'undefined') { %>
+        <h3>Atenção: <%= msg %> </h3>
     <% } %>
-    <form method="post" action="/user">
+    <form method="post">
         <label>Nome</label>
-        <input type="text" name="name"/><br>
+        <input type="text" name="name" required minlength="4"/><br>
         <label>Email</label>
-        <input type="email" name="email"/><br>
+        <input type="email" name="email" required/><br>
         <label>Senha</label>
-        <input type="password" name="password"/><br>
+        <input type="password" name="password" required minlength="4"/><br>
         <input type="submit" value="Cadastrar"/>
     
     </form>
