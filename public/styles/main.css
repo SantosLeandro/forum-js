@@ -44,6 +44,13 @@ body{
     border: 1px solid #AAA;
 }
 
+.topics-info{
+    display: grid;
+    grid-template-columns: 5% 30% 10% 10% 10% auto;
+    background-color: #EEE;
+    border: 1px solid #AAA;
+}
+
 .table-header{
     background-color: #347ab7;
     border: 1px solid rgb(20, 60, 112);
