@@ -2,11 +2,11 @@ const { Pool } = require('pg')
 const pool = new Pool({
   user: 'postgres',
   host: '127.0.0.1',
-  database: 'demo',
+  database: 'forum',
   password: '1234',
   port: 5432,
 });
-
+/*
   pool.query('SELECT NOW()', (err, res) => {
       if(err){
           console.log("ERROR: "+err);
@@ -16,6 +16,6 @@ const pool = new Pool({
       }
     
   });
-  
+  */
 
 module.exports = pool;

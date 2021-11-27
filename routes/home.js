@@ -1,8 +1,9 @@
 const router = require('express').Router();
 
-router.get('/',(req,res,next)=>{
-    res.render('index');
-});
+const homeController = require('../controllers/home');
+
+
+router.get('/',homeController.getAllCategories);
 
 
 module.exports = router;

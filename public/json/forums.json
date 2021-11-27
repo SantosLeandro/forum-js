@@ -1,0 +1,78 @@
+[
+    {
+        "category": {
+            "category_id": 1,
+            "title": "Geral",
+            "detail": "sem descrição",
+            "created_at": "2021-10-21T02:52:03.178Z",
+            "modified_at": "2021-10-21T02:52:03.178Z"
+        },
+        "forum": [
+            {
+                "forum_id": 1,
+                "name": "Notícias",
+                "description": "Comente as novidades da semana",
+                "category_id": 1,
+                "last_post_id": null,
+                "created_at": "2021-10-22T00:12:45.608Z",
+                "modified_at": "2021-10-22T00:12:45.608Z"
+            },
+            {
+                "forum_id": 6,
+                "name": "Tecnologia",
+                "description": null,
+                "category_id": 1,
+                "last_post_id": null,
+                "created_at": "2021-10-22T02:44:55.019Z",
+                "modified_at": "2021-10-22T02:44:55.019Z"
+            }
+        ]
+    },
+    {
+        "category": {
+            "category_id": 2,
+            "title": "Consoles e Jogos",
+            "detail": null,
+            "created_at": "2021-10-22T00:13:16.276Z",
+            "modified_at": "2021-10-22T00:13:16.276Z"
+        },
+        "forum": [
+            {
+                "forum_id": 2,
+                "name": "Nintendo",
+                "description": "Dicas, análises e jogos da Nintendo",
+                "category_id": 2,
+                "last_post_id": null,
+                "created_at": "2021-10-22T00:15:54.035Z",
+                "modified_at": "2021-10-22T00:15:54.035Z"
+            },
+            {
+                "forum_id": 3,
+                "name": "PC",
+                "description": "Dicas, análises e jogos para computadores",
+                "category_id": 2,
+                "last_post_id": null,
+                "created_at": "2021-10-22T00:15:54.276Z",
+                "modified_at": "2021-10-22T00:15:54.276Z"
+            },
+            {
+                "forum_id": 4,
+                "name": "Sony",
+                "description": "Dicas, análises e jogos da Sony",
+                "category_id": 2,
+                "last_post_id": null,
+                "created_at": "2021-10-22T00:15:54.285Z",
+                "modified_at": "2021-10-22T00:15:54.285Z"
+            },
+            {
+                "forum_id": 5,
+                "name": "Microsoft",
+                "description": "Dicas, análises e jogos da Microsoft",
+                "category_id": 2,
+                "last_post_id": null,
+                "created_at": "2021-10-22T00:15:54.297Z",
+                "modified_at": "2021-10-22T00:15:54.297Z"
+            }
+        ]
+    }
+]

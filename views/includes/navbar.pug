@@ -1,0 +1,9 @@
+div(class="box menu")
+    a(href="/" class="fas fa-home")
+    
+    if isLoggedIn == true
+        a(href="/user" ) #{session.username}
+        a(href="/logout") Logout
+    else   
+        a(href="/login") Login
+        a(href="/signup") Registrar

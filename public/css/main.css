@@ -1,0 +1,104 @@
+body{
+  font-family: 'Zen Kaku Gothic New', sans-serif !important;
+  background-color: #ccc;
+  margin: 0px;
+}
+
+.main{
+  margin: 5px auto;
+  max-width: 1100px;
+  background-color: #FFF;
+}
+
+.content{
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  font-style: normal;
+  color: #000;
+}
+
+input[type=text], input[type=password],input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #53575f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #313131;
+  }
+
+  .form-1{
+      width: 25%;
+  }
+
+  .navbar{
+    background-color: #313131;
+    overflow: hidden; 
+  }
+
+  .navbar  > a{
+    color: #FFF;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .navbar  > a:hover{
+    background-color: #53575f;
+  }
+
+  .forums-list{
+    border: 1px solid #000;
+    margin-bottom: 10px;
+  }
+  .forums-item{
+    font-size: medium;
+    font-weight: bold;
+   
+  }
+  .forums-description{
+    font-size: small;
+    font-weight: lighter;
+  }
+
+  .forums-header{
+    background-color: #313131;
+    padding: 5px;
+    margin: 0px;
+    color: #FFF;
+    font-size: large;
+    font-weight: bold;
+  }
+
+
+  table, td, th {
+    border: 1px solid black;
+    padding: 5px;
+    table-layout: fixed;
+    width: 60%;
+  }
+  
+  table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+  }

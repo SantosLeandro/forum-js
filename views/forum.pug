@@ -1,0 +1,13 @@
+extends layout.pug 
+block content
+   h3 #{forum.name}
+   if( isLoggedIn == true)
+      - newTopicUrl = forum.forum_id+"/newtopic"
+      form(action=newTopicUrl method="get")
+        input(type="submit" value="Novo Tópico")
+      hr
+   each topic in data
+    strong #{topic.title}
+    div Autor: #{topic.username}
+    div Data: #{Date(topic.modified_at)} 
+    hr

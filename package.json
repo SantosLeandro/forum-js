@@ -1,29 +1,23 @@
 {
   "name": "forum",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SantosLeandro/forum.git"
-  },
-  "author": "",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/SantosLeandro/forum/issues"
+  "scripts": {
+      "test": "jest"
   },
-  "homepage": "https://github.com/SantosLeandro/forum#readme",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bcryptjs": "^2.4.3",
+    "connect-pg-simple": "^7.0.0",
     "ejs": "^3.1.6",
+    "eta": "^1.12.3",
     "express": "^4.17.1",
-    "express-router": "0.0.1",
-    "pg": "^8.7.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.13"
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "jest": "^27.3.1",
+    "pg": "^8.7.1",
+    "pug": "^3.0.2"
   }
 }

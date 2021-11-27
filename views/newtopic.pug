@@ -1,0 +1,17 @@
+extends layout.pug 
+
+block content
+    div(class="box")
+        h3 Novo Tópico
+        form(action="", method="post" class="form-1") 
+            label(for="") Título
+            input(type="text" name="title")
+            label(for="") 
+            button(type="button" onclick="addBold()") B
+            button(type="button" onclick="addItalic()") I
+            button(type="button" onclick="addUnderline()") U
+            button(type="button" onclick="addImg()") img
+            button(type="button" onclick="addUrl()") url
+            button(type="button" onclick="addCode()") code
+            textarea(id="contentArea" rows="4" cols="50" name="content")
+            input(type="submit")

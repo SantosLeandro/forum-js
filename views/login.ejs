@@ -1,4 +1,9 @@
-<form>
+<% if (typeof msg != 'undefined') { %>
+    <h3> <%= msg %>  </h3>
+    
+<% } %>
+
+<form method="post">
     <label>Username</label>
     <input type="text" name="name"/>
     <label>Password</label>

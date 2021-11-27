@@ -11,6 +11,27 @@ exports.getUser = (req, res, next) => {
     });
 }
 
+
+exports.loginUser = (req, res, next) =>{
+    User.findByName(req.body.name, (err, result) => {
+       if(result.rowCount > 0){
+           bcrypt.compare(req.body.password, result.rows[0].password)
+            .then(check =>{
+                console.log(check);
+                if(check){
+                    console.log("PASSWORD OK");
+                    req.session.isLoggedIn = true;
+                    res.render('index', { user: result.rows[0] }); 
+                    return;
+                }
+                else
+                    res.render('login', { msg: "Erro usuario ou senha inválida" });
+            });
+       }
+      
+    });
+}
+
 exports.newUser = (req, res, next) => {
 
     const username = req.body.name.trim();

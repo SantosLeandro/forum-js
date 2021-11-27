@@ -1,0 +1,17 @@
+extends layout.pug 
+block content
+  div(class="box")
+     h3 Fórum: #{forum.name}
+     strong Título: #{topic.title}
+     hr
+     if( isLoggedIn == true)
+        - newTopicUrl = forum.forum_id+"/newpost"
+        form(action=newTopicUrl method="get")
+          input(type="submit" value="Responder")
+        hr
+     
+     each post in posts
+      div Autor: #{post.username}
+      div Data: #{post.modified_at} 
+      div Mensagem: #{post.content}
+      hr
